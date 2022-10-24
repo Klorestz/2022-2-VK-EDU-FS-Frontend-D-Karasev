@@ -35,9 +35,8 @@
             const input = document.querySelector('.form-input');
             const messages = document.querySelector('.messages');
 
-            document.addEventListener("DOMContentLoaded", MessageFromLocalStorage.bind(this));
-            form.addEventListener('submit', handleSubmit.bind(this));
-            form.addEventListener('keypress', handleKeyPressDown().bind(this));
+            document.addEventListener("DOMContentLoaded", MessageFromLocalStorage);
+            form.addEventListener('submit', handleSubmit);
 
             function MessageFromLocalStorage(){
                 let existingMessages = JSON.parse(localStorage.getItem("messages"));
@@ -75,14 +74,9 @@
                 existingMessages.push(template);
                 localStorage.setItem("messages", JSON.stringify(existingMessages));
                 CreateMessage(template);
-                input.value = "";
+                input.value = '';
             }
 
-            function handleKeyPressDown (event) {
-                if (event.keyCode === 13) {
-                    form.dispatchEvent(new Event('submit'));
-                }
-            }
         </script>
     <script type="text/javascript" src="bundle.js"></script></body>
 </html>
