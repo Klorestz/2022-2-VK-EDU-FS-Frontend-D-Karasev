@@ -1,0 +1,55 @@
+.form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex: 80px;
+    border-top: 1px solid #dedede;
+}
+.form > button{
+    background-color: white;
+    border: 0;
+    color: black;
+    font-size: 35px;
+    padding-right: 20px;
+}
+#messages{
+    flex: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.message {
+    color: red;
+    /* border: 1px solid; */
+    border-radius: 4px;
+    margin: 4px 0;
+    padding: 4px;
+    align-self: flex-end;
+}
+.message_block{
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    justify-content: end;
+    align-self: end;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.message_date {
+    color: darkgray;
+    display: flex;
+    justify-content: end;
+}
+input[type=submit] {
+    visibility: collapse;
+}
+
+input {
+    padding-left: 20px;
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    width: calc(100% - 2px);
+}
