@@ -18,6 +18,7 @@ body{
     height: 100vh;
 }
 
+
 .header {
     display: flex;
     flex-direction: row;
@@ -27,7 +28,7 @@ body{
     font-size: 24px;
 }
 .header > .name_of_page{
-    flex: 1;
+    flex: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,21 +39,34 @@ body{
     border: 0;
     color: white;
     font-size: 35px;
+    flex: 5%;
+}
+
+.header > button:active{
+    font-size: 30px;
+}
+
+@media screen and (min-width: 700px) {
+    .header {
+        font-size: 30px;
+    }
 }
 .list-of-chats {
     display: flex;
     flex-direction: column;
-    flex: 0 1 100px;
+    width: 100%;
 }
 .list-of-chats > .chat{
     display: flex;
     flex-direction: row;
     flex:0 1 100%;
+    width: 100%;
     flex-wrap: nowrap;
+    transition: background-color 0.2s;
 }
 .chat > .avatar{
     display: flex;
-    flex: 0 1 10%;
+    flex: 10%;
     justify-content: center;
     align-items: center;
 }
@@ -63,7 +77,7 @@ body{
 .chat > .name-user-last-message, .chat > .message-time-reading{
     display: flex;
     flex-direction: column;
-    flex:2 0 85%;
+    flex:85%;
     justify-content: space-around;
     align-items: start;
     border-bottom: 1px solid #dedede;
@@ -81,12 +95,35 @@ body{
     color: #333333;
 }
 .chat > .message-time-reading{
-    flex: 0 1 5%;
+    flex: 5%;
+    padding-right: 5px;
 }
 .message-time, .reading{
     font-size: 20px;
 }
+.list-of-chats > .chat:hover{
+    background-color: #dedede;
+    cursor: pointer;
+}
+.list-of-chats > .chat:active{
+    background-color: darkgray;
+}
 
+@media screen and (max-width: 435px) {
+    .chat > .name-user-last-message > .name-of-user {
+        font-size: 21px;
+    }
+    .chat > .name-user-last-message > .last-message{
+        font-size: 18px;
+    }
+    .message-time, .reading{
+        font-size: 18px;
+    }
+    .avatar > .avatar-user{
+        width: 80px;
+        height: 80px;
+    }
+}
 .button-create-chat{
     position: fixed;
     right: 50px;
@@ -95,4 +132,23 @@ body{
     border-radius: 50% 50%;
     padding: 10px;
     font-size: 40px;
+    animation: pulse 2s infinite;
+}
+.button-create-chat:hover{
+    cursor: pointer;
+    animation: none;
+}
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(255, 228, 196, 0.8);
+        box-shadow: 0 0 0 0 rgba(255, 228, 196, 0.8);
+    }
+    50% {
+        -moz-box-shadow: 0 0 0 10px rgba(255, 228, 196, 0);
+        box-shadow: 0 0 0 10px rgba(255, 228, 196, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(255, 228, 196, 0);
+        box-shadow: 0 0 0 0 rgba(255, 228, 196, 0);
+    }
 }
