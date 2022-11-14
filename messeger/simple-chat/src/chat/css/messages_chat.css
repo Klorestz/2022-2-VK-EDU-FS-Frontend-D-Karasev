@@ -36,6 +36,9 @@
     border-radius: 5px;
     margin-top: 10px;
     margin-right: 5px;
+    animation-name: messageanim;
+    animation-duration: 0.3s;
+    animation-direction: alternate;
 }
 .message_date {
     color: darkgray;
@@ -52,4 +55,16 @@ input {
     border: 0;
     outline: none;
     width: calc(100% - 2px);
+}
+
+@keyframes messageanim {
+    from
+    {
+        margin-right: 100%;
+    }
+    to
+    {
+       margin-right: 0%;
+    }
+
 }

@@ -1,17 +1,19 @@
 .list-of-chats {
     display: flex;
     flex-direction: column;
-    flex: 0 1 100px;
+    width: 100%;
 }
 .list-of-chats > .chat{
     display: flex;
     flex-direction: row;
     flex:0 1 100%;
+    width: 100%;
     flex-wrap: nowrap;
+    transition: background-color 0.2s;
 }
 .chat > .avatar{
     display: flex;
-    flex: 0 1 10%;
+    flex: 10%;
     justify-content: center;
     align-items: center;
 }
@@ -22,7 +24,7 @@
 .chat > .name-user-last-message, .chat > .message-time-reading{
     display: flex;
     flex-direction: column;
-    flex:2 0 85%;
+    flex:85%;
     justify-content: space-around;
     align-items: start;
     border-bottom: 1px solid #dedede;
@@ -40,8 +42,32 @@
     color: #333333;
 }
 .chat > .message-time-reading{
-    flex: 0 1 5%;
+    flex: 5%;
+    padding-right: 5px;
 }
 .message-time, .reading{
     font-size: 20px;
+}
+.list-of-chats > .chat:hover{
+    background-color: #dedede;
+    cursor: pointer;
+}
+.list-of-chats > .chat:active{
+    background-color: darkgray;
+}
+
+@media screen and (max-width: 435px) {
+    .chat > .name-user-last-message > .name-of-user {
+        font-size: 21px;
+    }
+    .chat > .name-user-last-message > .last-message{
+        font-size: 18px;
+    }
+    .message-time, .reading{
+        font-size: 18px;
+    }
+    .avatar > .avatar-user{
+        width: 80px;
+        height: 80px;
+    }
 }
