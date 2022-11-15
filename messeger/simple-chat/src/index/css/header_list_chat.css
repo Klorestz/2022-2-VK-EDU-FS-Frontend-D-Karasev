@@ -7,7 +7,7 @@
     font-size: 24px;
 }
 .header > .name_of_page{
-    flex: 1;
+    flex: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,4 +18,15 @@
     border: 0;
     color: white;
     font-size: 35px;
+    flex: 5%;
+}
+
+.header > button:active{
+    font-size: 30px;
+}
+
+@media screen and (min-width: 700px) {
+    .header {
+        font-size: 30px;
+    }
 }
