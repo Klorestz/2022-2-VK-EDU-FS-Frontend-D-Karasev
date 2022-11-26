@@ -1,0 +1,39 @@
+
+.message {
+    color: red;
+    /* border: 1px solid; */
+    border-radius: 4px;
+    margin: 4px 0;
+    padding: 4px;
+    align-self: flex-end;
+}
+.message_block{
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    justify-content: flex-end;
+    align-self: flex-end;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 5px;
+    animation-name: messageanim;
+    animation-duration: 0.3s;
+    animation-direction: alternate;
+}
+.message_date {
+    color: darkgray;
+    display: flex;
+    justify-content: flex-end;
+}
+@keyframes messageanim {
+    from
+    {
+        margin-right: 100%;
+    }
+    to
+    {
+        margin-right: 0%;
+    }
+
+}
