@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Klorestz/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/css/main.ba81c013.css",
-    "main.js": "/Klorestz/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/js/main.8f322ff5.js",
-    "static/js/787.890e5f70.chunk.js": "/Klorestz/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/js/787.890e5f70.chunk.js",
-    "static/media/avataaars.png": "/Klorestz/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/media/avataaars.f80351cfce5416e4b1f4.png",
-    "index.html": "/Klorestz/2022-2-VK-EDU-FS-Frontend-D-Karasev/index.html",
-    "main.ba81c013.css.map": "/Klorestz/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/css/main.ba81c013.css.map",
-    "main.8f322ff5.js.map": "/Klorestz/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/js/main.8f322ff5.js.map",
-    "787.890e5f70.chunk.js.map": "/Klorestz/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/js/787.890e5f70.chunk.js.map"
+    "main.css": "/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/css/main.ba81c013.css",
+    "main.js": "/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/js/main.3934aeb2.js",
+    "static/js/787.890e5f70.chunk.js": "/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/js/787.890e5f70.chunk.js",
+    "static/media/avataaars.png": "/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/media/avataaars.f80351cfce5416e4b1f4.png",
+    "index.html": "/2022-2-VK-EDU-FS-Frontend-D-Karasev/index.html",
+    "main.ba81c013.css.map": "/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/css/main.ba81c013.css.map",
+    "main.3934aeb2.js.map": "/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/js/main.3934aeb2.js.map",
+    "787.890e5f70.chunk.js.map": "/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/js/787.890e5f70.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ba81c013.css",
-    "static/js/main.8f322ff5.js"
+    "static/js/main.3934aeb2.js"
   ]
 }
