@@ -1,0 +1,70 @@
+.chat{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex:0 1 100%;
+    width: 100%;
+    flex-wrap: nowrap;
+    transition: background-color 0.2s;
+}
+.avatar{
+    display: flex;
+    flex: 10%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.avatar_user{
+    height: 100px;
+    width: 100px;
+    border-radius: 50% 50%;
+}
+.name_user_last_message, .message_time_reading{
+    display: flex;
+    flex-direction: column;
+    flex:85%;
+    justify-content: space-around;
+    align-items: start;
+    border-bottom: 1px solid #dedede;
+    flex-wrap: wrap;
+}
+.name_of_user {
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.last_message{
+    padding-left: 10px;
+    font-size: 20px;
+    color: #333333;
+}
+.message_time_reading{
+    flex: 5%;
+    padding-right: 5px;
+}
+.message_time, .reading{
+    font-size: 20px;
+}
+.chat:hover{
+    background-color: #dedede;
+    cursor: pointer;
+}
+.chat:active{
+    background-color: darkgray;
+}
+
+@media screen and (max-width: 435px) {
+    .name_of_user {
+        font-size: 21px;
+    }
+    .last_message{
+        font-size: 18px;
+    }
+    .message_time, .reading{
+        font-size: 18px;
+    }
+    .avatar_user{
+        width: 80px;
+        height: 80px;
+    }
+}

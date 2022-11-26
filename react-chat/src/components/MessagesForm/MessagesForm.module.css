@@ -1,0 +1,32 @@
+.form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex: 80px;
+    flex-wrap: nowrap;
+    border-top: 1px solid #dedede;
+}
+.messages{
+    flex: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.attachemnets{
+    background-color: white;
+    border: 0;
+    color: black;
+    font-size: 35px;
+}
+input[type=submit] {
+    visibility: collapse;
+}
+
+input {
+    padding-left: 20px;
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    width: calc(100% - 2px);
+}
+

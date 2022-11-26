@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: blueviolet;
+    height: 84px;
+    font-size: 24px;
+}
+.name_of_page{
+    flex: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.button_header_list{
+    background-color: blueviolet;
+    border: 0;
+    color: white;
+    flex: 5%;
+}
+.icon:active{
+    font-size: 30px;
+}
+
+@media screen and (min-width: 700px) {
+    .header {
+        font-size: 30px;
+    }
+}
