@@ -24,7 +24,7 @@
     flex-direction: column;
     flex:85%;
     justify-content: space-around;
-    align-items: start;
+    align-items: flex-start;
     border-bottom: 1px solid #dedede;
     flex-wrap: wrap;
 }
