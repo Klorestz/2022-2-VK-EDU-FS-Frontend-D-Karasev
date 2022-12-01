@@ -1,0 +1,57 @@
+.edit_profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 100%;
+}
+.info_user{
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
+    margin: 50px;
+}
+.text_input{
+    background-color: #ededed;
+    border-bottom: 3px solid black;
+    outline: none;
+    padding: 10px 0 10px 10px;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 25px;
+}
+.input_desc{
+    padding: 10px 0 0 10px;
+    color: #757575;
+    font-size: 18px;
+}
+.input_info{
+    padding: 5px;
+    background-color: white;
+    font-size: 18px;
+    width: 100%;
+}
+.edit_photo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.edit_avatar{
+    position: relative;
+    height: 152px;
+    width: 152px;
+    transition: opacity 0.5s;
+}
+.camera{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50% 50%;
+}
+.edit_avatar:hover{
+    opacity: 0.3;
+    cursor: pointer;
+}
