@@ -38,7 +38,6 @@ export default function PageChat({id, name}){
     }
 
     useEffect(() => {
-        function MessageFromLocalStorage(){
             let messages = localStorage.getItem("messages")
             if (messages == null) return;
             messages = JSON.parse(messages)
@@ -46,8 +45,7 @@ export default function PageChat({id, name}){
             {
                 setMessages(messages[id])
             }
-        }
-        MessageFromLocalStorage()}, [value, id])
+            }, [value, id])
 
     return(
         <div className={classes.dialogue}>
