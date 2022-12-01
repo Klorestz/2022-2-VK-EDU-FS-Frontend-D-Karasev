@@ -4,12 +4,15 @@ import SearchIcon from '@mui/icons-material/Search';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import classes from "./HeaderChat.module.css"
 import classNames from "classnames";
+import {Link} from "react-router-dom";
 
 export default function HeaderChat(props){
     return(
         <div className={classes.header}>
-            <button className={classNames(classes.back_to_list_chat, classes.button_headers)} onClick={props.handleChatListClick}>
+            <button className={classNames(classes.back_to_list_chat, classes.button_headers)}>
+                <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'}}>
                 <ArrowBackIcon sx={{fontSize : "35px"}}/>
+                </Link>
             </button>
             <div className={classes.name_of_chat}>
                 <div className={classes.name_of_chat_user}>

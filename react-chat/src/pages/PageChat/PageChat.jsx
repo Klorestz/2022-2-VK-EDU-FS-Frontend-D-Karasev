@@ -3,24 +3,17 @@ import classes from "./PageChat.module.css"
 import HeaderChat from "../../components/HeaderChat/HeaderChat";
 import MessagesForm from "../../components/MessagesForm/MessagesForm";
 
-export default function PageChat({handleChatListClick}){
+export default function PageChat({id, name}){
 
     const [value, setText] = useState('');
-    const [messages, setMessages] = useState([])
-
-    function MessageFromLocalStorage(){
-        let messages = localStorage.getItem("messages");
-        if (messages == null) return;
-        messages = JSON.parse(messages)
-        setMessages(messages)
-    }
+    const [messages, setMessages] = useState([]);
 
     function handleSubmit (event) {
         event.preventDefault();
         let existingMessages = JSON.parse(localStorage.getItem("messages"));
         let index = JSON.parse(localStorage.getItem("index"));
         if (existingMessages === null) {
-            existingMessages = [];
+            existingMessages = {};
             index=0;
         }
         if (!value) return;
@@ -30,8 +23,12 @@ export default function PageChat({handleChatListClick}){
             "text" : value,
             "sender" : 'Danila',
         }
+        if (!(id in existingMessages))
+        {
+            existingMessages[id] = []
+        }
         localStorage.setItem("index", JSON.stringify(index));
-        existingMessages.push(template);
+        existingMessages[id].push(template);
         localStorage.setItem("messages", JSON.stringify(existingMessages));
         setText('')
     }
@@ -41,14 +38,22 @@ export default function PageChat({handleChatListClick}){
     }
 
     useEffect(() => {
-        MessageFromLocalStorage()}, [value])
+        function MessageFromLocalStorage(){
+            let messages = localStorage.getItem("messages")
+            if (messages == null) return;
+            messages = JSON.parse(messages)
+            if (id in messages)
+            {
+                setMessages(messages[id])
+            }
+        }
+        MessageFromLocalStorage()}, [value, id])
 
     return(
         <div className={classes.dialogue}>
             <HeaderChat
-                name={"Дженнифер Эшли"}
+                name={name}
                 last_visited={"был(а) 1 мин назад"}
-                handleChatListClick={handleChatListClick}
             >
             </HeaderChat>
             <MessagesForm
