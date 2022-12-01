@@ -6,6 +6,10 @@ import FloatButton from "../../components/FloatButton/FloatButton";
 import image_user from "./static/avataaars.png"
 import image_user2 from "./static/woman.png";
 
+const chats =[
+    {id : 1, name : "Дженнифер Эшли", message : "Ты куда пропал?", time_message : "15:52", image : image_user},
+    {id : 2, name : "Ксения", message : "Как дела?", time_message: "14:52", image: image_user2}
+]
 
 export default function PageListOfChats({handlechatclick})
 {
@@ -13,24 +17,19 @@ export default function PageListOfChats({handlechatclick})
         <>
             <HeaderListChat></HeaderListChat>
             <div className={classes.list_of_chats}>
-                <BodyLIstChat
-                    chat_id={1}
-                    img_locate={image_user}
-                    name_user={"Дженнифер Эшли"}
-                    last_message={"Ты куда пропал?"}
-                    time_message={"15:52"}
-                    handleChatClick={handlechatclick}
-                >
-                </BodyLIstChat>
-                    <BodyLIstChat
-                        chat_id={2}
-                        img_locate={image_user2}
-                        name_user={"Ксения"}
-                        last_message={"Как дела?"}
-                        time_message={"14:52"}
-                        handleChatClick={handlechatclick}
-                    >
+                {
+                    chats.map((chat) =>
+                        <BodyLIstChat
+                            chat_id= {chat.id}
+                            img_locate={chat.image}
+                            name_user={chat.name}
+                            last_message={chat.message}
+                            time_message={chat.time_message}
+                            handleChatClick={handlechatclick}
+                        >
                     </BodyLIstChat>
+                    )
+                }
             </div>
             <FloatButton></FloatButton>
         </>
