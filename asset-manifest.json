@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/css/main.ba81c013.css",
-    "main.js": "/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/js/main.3934aeb2.js",
+    "main.css": "/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/css/main.48b06c64.css",
+    "main.js": "/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/js/main.078045e1.js",
     "static/js/787.890e5f70.chunk.js": "/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/js/787.890e5f70.chunk.js",
     "static/media/avataaars.png": "/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/media/avataaars.f80351cfce5416e4b1f4.png",
+    "static/media/profile.png": "/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/media/profile.5faf09a7795d28bf5a2b.png",
+    "static/media/woman.png": "/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/media/woman.b078755c3606be916daa.png",
+    "static/media/camera.png": "/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/media/camera.07059c76260b4175c70e.png",
     "index.html": "/2022-2-VK-EDU-FS-Frontend-D-Karasev/index.html",
-    "main.ba81c013.css.map": "/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/css/main.ba81c013.css.map",
-    "main.3934aeb2.js.map": "/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/js/main.3934aeb2.js.map",
+    "main.48b06c64.css.map": "/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/css/main.48b06c64.css.map",
+    "main.078045e1.js.map": "/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/js/main.078045e1.js.map",
     "787.890e5f70.chunk.js.map": "/2022-2-VK-EDU-FS-Frontend-D-Karasev/static/js/787.890e5f70.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba81c013.css",
-    "static/js/main.3934aeb2.js"
+    "static/css/main.48b06c64.css",
+    "static/js/main.078045e1.js"
   ]
 }
